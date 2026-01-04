@@ -11,7 +11,7 @@
   <header>
     <h1>Hatsune Miku Blog</h1>
     <p>A simple student blog about Hatsune Miku & Vocaloid</p>
-
+    <button id="themeBtn" class="theme-btn" type="button">Dark mode</button>
   <nav class="navbar">
     <ul class="nav-list">
       <li><a href="index.html">Home</a></li>
@@ -63,7 +63,7 @@
 
       <article>
         <h3>My 3 favorite things about Miku’s community</h3>
-        <p><small>Posted on: 04 Jan 2026 • Category: Fans</small></p>
+        <p><small>Posted on: 04 Jan 2026 - Category: Fans</small></p>
         <p>
           Miku is not just one person making music. She is like a shared character that everyone can use.
           That makes the community feel very creative.
@@ -118,3 +118,10 @@
     }
   });
 </script>
+<script>
+  const btn = document.getElementById("themeBtn");
+  btn.addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+  });
+</script>
+
