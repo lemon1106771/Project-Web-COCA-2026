@@ -64,11 +64,12 @@
       link.style.color = "white";
     }
   });
-
-  /*form submit alert*/
+  /* form alert */
   const form = document.getElementById("contactForm");
-  form.addEventListener("submit", function () {
-    alert("Thanks for your message! (This is a demo form)");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // fixes for the 405 erorr
+    alert("Thanks for your message! (just a demo form, it wont be sent anyway");
+    form.reset();
   });
 </script>
 
